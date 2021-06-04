@@ -13,6 +13,13 @@ import Movies from '../components/Movies';
 const App = (props) => {
   return (
     <Router>
+      <div>
+        <NavBar />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/actors" component={Actors} />
+        <Route exact path="/directors" component={Directors} />
+        <Route exact path="/movies" component={Movies} />
+      </div>
       {/*{code here}*/}
     </Router>
   );
